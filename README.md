@@ -8,13 +8,18 @@ A sleek, mobile-first Bitcoin calculator for converting between **USD**, **BTC**
 
 - 💱 **Bidirectional conversion** — Switch freely between USD, BTC, and Sats
 - ⚡ **Real-time price updates** — Fetches live Bitcoin price from CoinGecko API (refreshes every 60 seconds)
+- 🌍 **Multi-currency support** — USD, EUR, GBP with accurate local rates
+- 🔢 **Quick amount buttons** — One-click presets ($100 to $50,000), visible on load
+- 📊 **Portfolio tracker** — Save your BTC holdings and track fiat value in real-time
+- 🔔 **Price alerts** — Set notifications when Bitcoin goes above or below a threshold
+- 📤 **Share conversion cards** — Export conversions as shareable text (native share + clipboard)
 - 📱 **Mobile responsive** — Optimized for phones and tablets
 - 🌙 **Dark theme** — Sleek dark UI with Bitcoin orange accents
-- 🔢 **Smart input validation** — Sats accept integers only, USD allows 2 decimals, BTC supports up to 8 decimal places
+- 🔒 **Smart input validation** — Sats accept integers only, USD allows 2 decimals, BTC supports up to 8 decimal places
 
 ## Live Price
 
-The app pulls the current Bitcoin price from [CoinGecko's public API](https://www.coingecko.com/en/api) with no API key required. Prices auto-refresh every minute for accuracy.
+The app pulls the current Bitcoin price from [CoinGecko's public API](https://www.coingecko.com/en/api) with no API key required. Prices auto-refresh every minute for accuracy and are displayed in your selected currency.
 
 ### Quick math reference
 1 BTC = 100,000,000 sats (1 sat = 0.00000001 BTC)
