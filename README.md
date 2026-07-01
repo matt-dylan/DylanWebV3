@@ -9,7 +9,7 @@ A modern, responsive portfolio website showcasing my experience as a Senior Soft
 
 ## 🚀 Live Demo
 
-Visit the live site: [dylanwebv3.netlify.app](https://dylanwebv3.netlify.app)
+Visit the live site: [dylanwhitlock.netlify.app](https://dylanwhitlock.netlify.app)
 
 ## 📸 Preview
 
