@@ -14,7 +14,7 @@ const CURRENCIES = [
 ];
 
 // Historical price endpoint (CoinGecko free API)
-const HISTORICAL_API = '/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=1';
+const HISTORICAL_API = 'https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=1';
 
 function App() {
   // Price state
@@ -79,7 +79,7 @@ function App() {
         // For multi-currency support
         const currencyCodes = CURRENCIES.map(c => c.code).join(',');
         const response = await fetch(
-          `/api/v3/simple/price?ids=bitcoin&vs_currencies=${currencyCodes}`
+          `https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=${currencyCodes}`
         );
         if (!response.ok) throw new Error('Failed to fetch BTC price');
         const data = await response.json();
