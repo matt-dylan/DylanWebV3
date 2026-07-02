@@ -13,11 +13,10 @@ export default function Contact() {
     setStatus('submitting')
 
     try {
-      const response = await fetch('/', {
+      const response = await fetch('/_netlify/forms/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams({
-          'form-name': 'contact',
           name: formData.name,
           email: formData.email,
           message: formData.message,
