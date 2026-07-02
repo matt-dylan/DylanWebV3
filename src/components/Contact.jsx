@@ -14,19 +14,27 @@ export default function Contact() {
 
     try {
       const formData = new FormData(e.target)
+      console.log('Submitting form data:', Object.fromEntries(formData))
+      
       const response = await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams(formData).toString(),
       })
+      
+      console.log('Response status:', response.status)
+      console.log('Response ok:', response.ok)
 
       if (response.ok) {
         setStatus('sent')
         setFormData({ name: '', email: '', message: '' })
       } else {
+        const errorText = await response.text()
+        console.error('Form submission failed:', errorText)
         setStatus('error')
       }
     } catch (err) {
+      console.error('Form submission error:', err)
       setStatus('error')
     }
 
