@@ -48,6 +48,7 @@ export default function Contact() {
           <div className="gradient-border p-8">
             <form
               name="contact"
+              netlify
               data-netlify="true"
               method="POST"
               netlify-honeypot="bot-field"
